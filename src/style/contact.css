@@ -1,0 +1,45 @@
+#contact {
+    display: flex;
+    min-height: 100vh;
+}
+
+#cta-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+#cta-contact .title-contact {
+    font-size: 2rem;
+    color: #1d1d1d;
+}
+
+#cta-contact .description-contact {
+    font-size: 1rem;
+}
+
+#social-media-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 13%;
+}
+
+#social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: var(--color-primary-2);
+    font-size: 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    transition: box-shadow .3s ease;
+}
+
+#social-media-buttons a:haver {
+    box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.1);
+}

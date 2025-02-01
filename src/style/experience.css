@@ -1,0 +1,7 @@
+#experience {
+    flex-direction: column;
+}
+
+.section-title {
+    color: var(--color-primary-3);
+}

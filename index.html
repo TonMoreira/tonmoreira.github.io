@@ -1,34 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portfólio - Ewerton</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/header.css">
+    <link rel="stylesheet" href="src/style/about.css">
+    <link rel="stylesheet" href="src/style/contact.css">
+    <link rel="stylesheet" href="src/style/projects.css">
+    <link rel="stylesheet" href="src/style/experience.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Ewerton Moreira</h1>
-            <p>Estudante de ADS | Analista de Suporte | Futuro Analista de Dados</p>
+        <nav id="navbar">
+            <i class="fa-solid fa-laptop-code" id="nav_logo"></i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+
         </div>
     </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+    <script src="src/javascript/script.js"></script>
 
-    <main>
-        <section id="about" class="container">
-            <h2>Sobre Mim</h2>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) e profissional dedicado à área de tecnologia, com formação técnica em Redes de Computadores e experiência prática em suporte e análise de sistemas. Minha trajetória é marcada pela busca contínua por aprendizado e pela aplicação de conhecimentos técnicos para resolver problemas e otimizar processos.
+    <main id="content">
+        <section id="about">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Sobre Mim
+                </h1>
+
+                <p class="description">
+                    Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) e profissional dedicado à área de tecnologia, com formação técnica em Redes de Computadores e experiência prática em suporte e análise de sistemas. Minha trajetória é marcada pela busca contínua por aprendizado e pela aplicação de conhecimentos técnicos para resolver problemas e otimizar processos.
 
                 Ao longo de 2 anos e 11 meses, atuei no SAC Técnico da Cabo Telecom, onde adquiri ampla experiência em suporte técnico, atendimento ao cliente e resolução de problemas. Essa vivência me permitiu desenvolver excelentes habilidades de comunicação, empatia e foco em soluções eficientes para garantir a satisfação do cliente.
                 
@@ -38,11 +79,17 @@
                 
                 Minha experiência profissional também inclui 4 anos na Força Aérea Brasileira, onde atuei no departamento de pessoal, desenvolvendo habilidades organizacionais, e 1 ano como Auxiliar Financeiro, adquirindo conhecimentos práticos em operações financeiras e análise de dados.
                 
-                Sou uma pessoa comprometida, proativa e focada em soluções práticas, sempre buscando aprimorar minhas habilidades e contribuir de forma significativa para o sucesso das equipes e dos clientes com quem trabalho.</p>
+                Sou uma pessoa comprometida, proativa e focada em soluções práticas, sempre buscando aprimorar minhas habilidades e contribuir de forma significativa para o sucesso das equipes e dos clientes com quem trabalho.
+                </p>
+            </div>
+
+            <div id="banner">
+                <img src="src/Images/foto.png" alt="">
+            </div>
         </section>
 
-        <section id="experience" class="container">
-            <h2>Experiência</h2>
+        <section id="experience">
+            <h2 class= "section-title">Experiência</h2>
             <ul>
                 <li><strong>Analista de Suporte - Mapia:</strong> Suporte técnico, treinamentos e melhorias em sistema.</li>
                 <li><strong>Suporte ao SGP:</strong> Atendimento a usuários e documentação de sistemas ERP.</li>
@@ -50,34 +97,78 @@
             </ul>
         </section>
 
-        <section id="projects" class="container">
-            <h2>Projetos</h2>
-            <ul>
-                <li><strong>Sistema de Estoque:</strong> Desenvolvimento de um sistema com C# e MongoDB.</li>
-                <li><strong>Apresentações e Treinamentos:</strong> Criação de materiais de treinamento para clientes e equipes.</li>
-            </ul>
+        <section id="projects">
+            <h2 class= "section-title">Projetos</h2>
+
+            <div id="projects-menu">
+                <div class="projects-item">
+                    <img src="src/Images/dados.png" class="projects-image" alt="">
+
+                    <h3 class="projects-title"> Banco de dados </h3>
+
+                    <span class="projects-description"> melhor projeto de banco de dados de todos</span>
+
+                    <div class="projects-view">
+                        <h4>Clique para visualizar</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <img src="src/Images/dados.png" class="projects-image" alt="">
+
+                    <h3 class="projects-title"> Banco de dados </h3>
+
+                    <span class="projects-description"> melhor projeto de banco de dados de todos</span>
+
+                    <div class="projects-view">
+                        <h4>Clique para visualizar</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <img src="src/Images/dados.png" class="projects-image" alt="">
+
+                    <h3 class="projects-title"> Banco de dados </h3>
+
+                    <span class="projects-description"> melhor projeto de banco de dados de todos</span>
+
+                    <div class="projects-view">
+                        <h4>Clique para visualizar</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo pelas redes abaixo:</p>
-            <div class="icones">
+        <section id="contact">
+
+            <div id="cta-contact">
+                <h2 class= "section-title">Contato</h2>
+                <h3 class= "section-subtitle">Entre em contato comigo pelas redes abaixo:</h3>
+            </div>
+            <div id="social-media-buttons">
                 <a href="mailto:tonmoreira7@gmail" target="_blank" title="Enviar um e-mail">
-                    <img src="https://i.imgur.com/e3h8ikS.png" alt="E-mail">
+                    <i class="fa-solid fa-envelope"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/ewerton-moreira-04933515b/" target="_blank" title="Visite meu LinkedIn">
-                    <img src="https://i.imgur.com/IclmbkL.png" alt="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/TonMoreira" target="_blank" title="Acesse meu GitHub">
-                    <img src="https://i.imgur.com/qN5QFgT.png" alt="GitHub">
+                    <i class="fa-brands fa-github"></i>
                 </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Ewerton Moreira. Todos os direitos reservados.</p>
+        <div>
+            <p>&copy; 2025 Ewerton Moreira. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
